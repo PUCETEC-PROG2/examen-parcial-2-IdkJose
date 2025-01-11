@@ -5,7 +5,7 @@ from django.db import models
 class Movie(models.Model):
     title = models.CharField(max_length=100)
     genre = models.CharField(max_length=100, default='Unknown')
-    author = models.CharField(max_length=100, default='Unknown author')  # Agrega un valor predeterminado
+    author = models.CharField(max_length=100, default='Unknown author')  
     year = models.IntegerField()
     synopsis = models.TextField(default='No synopsis available')
 
